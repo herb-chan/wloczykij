@@ -1,0 +1,21 @@
+{
+  "name": "wloczykij-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testing": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.1.0",
+    "ascii-table": "^0.0.9",
+    "colors": "^1.4.0",
+    "discord.js": "^14.2.0",
+    "fs": "^0.0.1-security",
+    "mongoose": "^6.6.5",
+    "ms": "^2.1.3",
+    "nodemon": "^2.0.20"
+  }
+}
