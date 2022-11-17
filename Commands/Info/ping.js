@@ -7,7 +7,7 @@ module.exports = {
     execute(interaction) {
         const ping_embed = new EmbedBuilder()
         .setTitle('🏓 Pong!')
-        .setDescription(`Opóźnienie wynosi ${Date.now() - interaction.createdTimestamp}ms.`)
+        .setDescription(`Opóźnienie wynosi ${Date.now() - interaction.createdTimestamp}ms!`)
         .setColor('#5e6242')
         interaction.reply({ embeds: [ping_embed], ephemeral: true})
     },
