@@ -3,7 +3,7 @@ const {SlashCommandBuilder, CommandInteraction, PermissionFlagsBits, EmbedBuilde
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("clear")
-    .setDescription("Clear a specific amount of messages from a target or channel.")
+    .setDescription("Usuń wybraną ilość wiadomości.")
     .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages)
     .addIntegerOption(option =>
         option.setName('amount')

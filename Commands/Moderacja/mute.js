@@ -4,7 +4,7 @@ const ms = require("ms");
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("mute")
-        .setDescription("Mute a member from the guild.")
+        .setDescription("Wycisz wybranego użytkownika.")
         .setDefaultMemberPermissions(PermissionFlagsBits.ModerateMembers)
         .addUserOption(option =>
             option.setName("target")

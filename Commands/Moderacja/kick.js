@@ -3,7 +3,7 @@ const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require("disc
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("kick")
-        .setDescription("Kick a user from the discord server.")
+        .setDescription("Wyrzuć wybranego użytkownika z serwera.")
         .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers)
         .addUserOption(option =>
             option.setName("target")
