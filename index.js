@@ -1,4 +1,5 @@
 require('dotenv').config();
+const keepAlive = require('./server')
 const {
   Client,
   GatewayIntentBits,
@@ -14,6 +15,7 @@ const { User, Message, GuildMember, ThreadMember, Channel } = Partials;
 const { handleLogs } = require("./Handlers/handleLogs");
 const { loadEvents } = require("./Handlers/eventHandler");
 const { loadCommands } = require("./Handlers/commandHandler");
+const keepAlvie = require('./server');
 
 const client = new Client({
   intents: [
@@ -36,3 +38,4 @@ client.login(process.env['token']).then(() => {
   loadEvents(client);
   loadCommands(client);
 });
+keepAlive();
