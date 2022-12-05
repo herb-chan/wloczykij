@@ -1,14 +1,14 @@
 const express = require('express');
 const server = express();
 
-server.all('/', (req, res) => {
-    res.send('Result: [OK].');
-})
+server.all(`/`, (req, res) => {
+    res.send(`Result: [OK].`);
+});
 
-function keepAlvie() {
+function keepAlive() {
     server.listen(3000, () => {
-        console.log('Server is now ready! | ' + Date.now());
+        console.log(`Server is now ready! | ` + Date.now());
     });
-} 
+}
 
-module.exports = keepAlvie;
+module.exports = keepAlive;
