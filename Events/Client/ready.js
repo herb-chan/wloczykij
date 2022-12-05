@@ -1,13 +1,13 @@
 const {Client} = require('discord.js');
 const mongoose = require('mongoose');
-const config = require("../../config.json");
+require('dotenv').config();
 const colors = require('colors');
 
 module.exports = {
     name: "ready",
     once: true,
     async execute(client) {
-        await mongoose.connect(config.mongodb || '', {
+        await mongoose.connect(process.env['mongodb'] || '', {
             keepAlive: true,
         });
 

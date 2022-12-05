@@ -14,6 +14,7 @@
     "colors": "^1.4.0",
     "discord-logs": "^2.2.1",
     "discord.js": "^14.7.0",
+    "dotenv": "^16.0.3",
     "fs": "^0.0.1-security",
     "mongoose": "^6.7.4",
     "ms": "^2.1.3",

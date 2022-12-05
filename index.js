@@ -1,3 +1,4 @@
+require('dotenv').config();
 const {
   Client,
   GatewayIntentBits,
@@ -29,9 +30,8 @@ const client = new Client({
 });
 
 client.commands = new Collection();
-client.config = require("./config.json");
 
-client.login(client.config.token).then(() => {
+client.login(process.env['token']).then(() => {
   handleLogs(client);
   loadEvents(client);
   loadCommands(client);
