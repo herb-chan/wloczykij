@@ -10,6 +10,7 @@ Jeśli chcesz zgłosić błąd bądź pomóc w tworzeniu bota, przeczytaj **[Jak
 - System moderowania serwerem
 - Rozbudowane komendy dla moderatorów
 - Rozbudowane komendy wydarzeń (w tym wydarzeń książkowych)
+- Rozbudowany system logowania wydarzeń i wiadomości
 - i więcej!
 
 
